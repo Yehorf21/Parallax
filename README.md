@@ -1,72 +1,43 @@
+🚀 AI Leaderboard Landing Page
+A responsive and animated landing page showcasing an AI leaderboard, built with React, Tailwind CSS, and GSAP. This project was created as part of a timed task — focused on clean UI, animation, accessibility, and responsiveness across devices.
 
-1. Since the Figma design provided was for bigger monitors, I had to adjust some sizes for normal-sized screens such as laptops, small monitors, etc.
+📸 Demo
+(Insert deployed URL or image/gif here)
 
-# React + TypeScript + Vite
+🧰 Tech Stack
+React – Functional components and JSX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tailwind CSS – Utility-first styling
 
-Currently, two official plugins are available:
+GSAP (GreenSock Animation Platform) – Scroll-based animations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React Router – Navigation and link handling
 
-## Expanding the ESLint configuration
+Custom Components – Reusable button component
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ARIA Attributes – Accessibility best practices
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Responsive Design – Mobile-first layout with scrollable table
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Optional: [MUI DataGrid] was considered but replaced with a custom-built solution for full control
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📋 Features
+🔁 Custom Leaderboard Table:
+Built from scratch using <table> elements with custom widths, scroll behavior, and row slicing logic.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🎯 Scroll-triggered Animations:
+GSAP powers multiple animations, including a vector that moves with scroll and a comet that fades in/out while moving.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🎨 Gradient Buttons:
+Styled with CSS border-image for a clean, vibrant look. Responsive padding based on device size.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🧠 Accessible Elements:
+All interactive components include aria-labels and alt attributes for better screen reader support.
+
+📱 Responsive Layout:
+Designed with overflow-x-auto, media queries, and Tailwind utilities to work on mobile, tablet, and desktop.
+
+Demo: https://parallaxbrilliant.netlify.app/
+
+Have a good time reviewing it and a good day!
+
