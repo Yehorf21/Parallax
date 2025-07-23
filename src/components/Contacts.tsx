@@ -25,7 +25,7 @@ export const Contacts = () => {
   return (
     <section
       id="contactsSection"
-      className="flex justify-between sm:items-center"
+      className="flex justify-between sm:items-center pl-5 sm:pl-8 lg:pl-20 overflow-x-clip"
     >
       <div id="contactsText" className="flex flex-col gap-8 sm:max-w-[43vw]">
         <h2 className="text-[40px] lg:text-5xl font-title">
@@ -60,7 +60,7 @@ export const Contacts = () => {
         id="moon"
         src="images/moon.webp"
         alt="moon image"
-        className="w-[30vw] h-[30vw] object-contain"
+        className="w-[30vw] h-[30vw] object-contain pr-5 sm:pr-8 lg:pr-20"
       />
     </section>
   );

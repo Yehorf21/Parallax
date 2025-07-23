@@ -26,13 +26,12 @@ export const Slider = () => {
   }, []);
 
   return (
-    <section id="scrollSection" className="flex flex-col gap-11">
+    <section id="scrollSection" className="flex flex-col gap-11 overflow-x-hidden">
       <h2 className="text-[40px] lg:text-5xl font-title text-center">
         Projects integrated into the Arrakis AI Ecosystem
       </h2>
 
-      {/* we cancel out the default page padding for the scroller to work smoother */}
-      <div className="w-[100vw] -mx-5 sm:-mx-8 lg:-mx-20 overflow-hidden">
+      <div className="w-[100vw]">
         <ul
           id="scroller"
           className="flex items-center gap-30 px-5 sm:px-8 lg:px-20"

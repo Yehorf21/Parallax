@@ -38,13 +38,13 @@ export const Header = () => {
     });
 
     gsap.to("#blue-vector", {
-      y: -100,
+      y: -200,
+      duration: 1,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: "#blue-vector",
-        start: "top top -= 100",
+        start: "top top",
         end: "bottom top",
-        scrub: true,
       },
     });
 
@@ -65,10 +65,22 @@ export const Header = () => {
         },
       }
     );
+
+    gsap.to("#orange-vector", {
+      y: 500,
+      scaleX: .5,
+      scaleY: .5,
+      duration: 2,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: "#widget",
+        start: "bottom bottom -= 100",
+      }
+    });
   }, []);
 
   return (
-    <section id="homeSection" className="flex flex-col gap-15 lg:gap-25">
+    <section id="homeSection" className="flex flex-col gap-15 lg:gap-25 pt-3 sm:pt-6 lg:pt-8 padding-inline">
       <nav className="flex gap-6 lg:gap-12 items-center self-center">
         <a
           href="#leaderboardSection"
@@ -122,7 +134,7 @@ export const Header = () => {
       <div
         id="header-planet"
         aria-label="parallax header planet image"
-        className="absolute right-[20%] sm:right-0 top-0 sm:-top-[500px] -z-10 w-[80vw] sm:w-[45vw] h-[80vw] sm:h-[45vw] bg-contain bg-no-repeat header-planet"
+        className="absolute right-[20%] sm:right-0 top-0 sm:-top-[500px] -z-100 w-[80vw] sm:w-[45vw] h-[80vw] sm:h-[45vw] bg-contain bg-no-repeat header-planet"
       />
       <div
         id="blue-vector"

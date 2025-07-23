@@ -5,8 +5,6 @@ interface Props {
   customPadding?: string;
 }
 
-// make rounded borders
-
 export const Button: React.FC<Props> = ({ text, customPadding }) => {
   // handle 2 types of buttons
   const defaultPaddings = ["16px 32px", "20px 44px"];

@@ -3,8 +3,6 @@ import { Button } from "./helpers/Button";
 import { useFade } from "./helpers/useFade";
 import type { LeaderBoardTable, RowType } from "./helpers/types";
 
-// don't forget about different font on the table
-
 export const Leaderboard = () => {
   const [leaderboard, setLeaderboard] = useState<LeaderBoardTable>();
   const [page, setPage] = useState<number>(0);
@@ -43,7 +41,7 @@ export const Leaderboard = () => {
   }, []);
 
   return (
-    <section id="leaderboardSection" className="flex flex-col gap-8">
+    <section id="leaderboardSection" className="flex flex-col gap-8 padding-inline">
       <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 sm:gap-0">
         <h2 className="text-[40px] lg:text-5xl font-title">LLM Leaderboard</h2>
 

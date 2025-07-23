@@ -14,17 +14,16 @@ export const About = () => {
         trigger: "#comet",
         start: "top 50%",
         end: "top bottom",
-        scrub: true,
       },
     });
 
     cometTl
-      .fromTo("#comet", { opacity: 0 }, { opacity: 1, top: "0", right: "50%" })
-      .to("#comet", { opacity: 0, top: "70%", right: "0" });
+      .fromTo("#comet", { opacity: 0 }, { opacity: 1, top: "70%", right: "0", duration: .5 })
+      .to("#comet", { opacity: 0, duration: .2 });
   }, {});
 
   return (
-    <section id="aboutSection" className="relative flex flex-col gap-8">
+    <section id="aboutSection" className="relative flex flex-col gap-8 padding-inline">
       <h2 className="text-[40px]/tight lg:text-5xl/tight font-title max-w-[80vw] lg:max-w-[50vw]">
         Crowdsourcing our collective intelligence to build the best AI
       </h2>

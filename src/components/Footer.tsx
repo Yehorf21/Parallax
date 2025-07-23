@@ -2,8 +2,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-// there seems to be a padding down or something
-
 gsap.registerPlugin(ScrollTrigger);
 export const Footer = () => {
   const links = ["Home", "Leaderboard", "About"];
@@ -30,7 +28,7 @@ export const Footer = () => {
   }, []);
 
   return (
-    <section className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6 padding-inline">
       <div className="flex gap-12 sm:gap-18 self-center pt-[300px]">
         {links.map((link) => (
           <a
