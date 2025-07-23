@@ -1,0 +1,271 @@
+{
+  "data": {
+    "columns": [
+      {
+        "field": "status",
+        "headerName": "",
+        "width": 36
+      },
+      {
+        "field": "id",
+        "headerName": "#",
+        "width": 36
+      },
+      {
+        "field": "modelName",
+        "headerName": "Model Name",
+        "width": 220
+      },
+      {
+        "field": "avg",
+        "headerName": "Average",
+        "width": 80
+      },
+      {
+        "field": "arc",
+        "headerName": "ARC",
+        "width": 80
+      },
+      {
+        "field": "hellaSwag",
+        "headerName": "HellaSwag",
+        "width": 80
+      },
+      {
+        "field": "mmlu",
+        "headerName": "MMLU",
+        "width": 80
+      },
+      {
+        "field": "truthfulQa",
+        "headerName": "TruthfulQA",
+        "width": 80
+      },
+      {
+        "field": "winogrande",
+        "headerName": "Winogrande",
+        "width": 80
+      },
+      {
+        "field": "gsm8k",
+        "headerName": "GSM8K",
+        "width": 80
+      },
+      {
+        "field": "usage",
+        "headerName": "Usage",
+        "width": 80
+      }
+    ],
+    "rows": [
+      {
+        "status": "constant",
+        "id": 1,
+        "modelName": "davidkim205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "up",
+        "id": 2,
+        "modelName": "clintim205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "down",
+        "id": 3,
+        "modelName": "tom205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "up",
+        "id": 4,
+        "modelName": "bradley205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "constant",
+        "id": 5,
+        "modelName": "tom205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "down",
+        "id": 6,
+        "modelName": "davidkim205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "up",
+        "id": 7,
+        "modelName": "cloud05/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "down",
+        "id": 8,
+        "modelName": "138367im205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "constant",
+        "id": 9,
+        "modelName": "yoyo018205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "constant",
+        "id": 10,
+        "modelName": "davidkim205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "constant",
+        "id": 11,
+        "modelName": "reed12w205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "up",
+        "id": 12,
+        "modelName": "sue25205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "down",
+        "id": 13,
+        "modelName": "ben25w205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "down",
+        "id": 14,
+        "modelName": "johnnyw205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "up",
+        "id": 15,
+        "modelName": "davidkim205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      },
+      {
+        "status": "constant",
+        "id": 16,
+        "modelName": "richards205/Rhea-72b-v0.5",
+        "avg": "81.22",
+        "arc": "79.78",
+        "hellaSwag": "91.15",
+        "mmlu": "77.95",
+        "truthfulQa": "74.50",
+        "winogrande": "87.85",
+        "gsm8k": "76.12",
+        "usage": "1,384,193"
+      }
+    ]
+  }
+}

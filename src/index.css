@@ -1,0 +1,238 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Clash Grotesk';
+  src: url('./assets/fonts/ClashGrotesk-Medium.woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Grotesk';
+  src: url('./assets/fonts/ClashGrotesk-Semibold.woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+  /* fonts */
+  --font-title: Clash Grotesk, sans-serif;
+  --font-text: Inter;
+  --font-numeric: Metrophobic;
+
+  /* colors */
+  --color-gradient-title: linear-gradient(45deg, #B53EA4, #FC6F32, #FF4A59);
+  --color-gradient-button: linear-gradient(45deg, #963488, #FC6F32, #FF4A59);
+
+  --color-normal-text: #FFFFFF;
+  --color-bg-color: #020202;
+  --color-table-column-name: #8F99B0;
+  --color-table-odd-row: #C9D9FF14;
+  --color-footer-links: #8E8E8E;
+}
+
+@layer utilities {
+  /* fonts */
+  .font-title {
+    font-family: var(--font-title);
+  }
+
+  .font-numeric {
+    font-family: var(--font-numeric);
+  }
+
+  /* gradients */
+
+  .gradient-title {
+    background-image: var(--color-gradient-title);
+  }
+
+  .gradient-link:hover {
+    background-image: var(--color-gradient-button);
+  }
+
+  .gradient-title, .gradient-link:hover {
+    background-clip: text;
+  
+    /* vendors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-button {
+    background: transparent;
+    
+    background-image: linear-gradient(#000, #000), var(--color-gradient-button);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    
+    border: 2px solid transparent;
+    border-radius: 9999px;
+  }
+
+  .gradient-button:hover {
+    background-image: var(--color-gradient-button);
+  }
+
+  .gradient-widget {
+    background-image:  linear-gradient(
+      to right,
+      rgba(150, 52, 136, 0.17),
+      rgba(252, 111, 50, 0.17) 25%,
+      rgba(255, 74, 89, 0.17) 85%
+    );
+  }
+
+  /* colors */
+
+  .table-column-name-color {
+    color: var(--color-table-column-name);
+  }
+
+  .footer-color {
+    color: var(--color-footer-links);
+  }
+
+  /* color clouds positioning */
+
+  .extra-hue {
+    width: 850px;
+    height: 600px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /* background images */
+
+  .header-planet {
+    background-image: url('/images/header-planet.webp');
+  }
+
+  .extra-hue--blue {
+    background-image: url('/images/extra-hue-blue.webp');
+  }
+
+  .extra-hue--orange {
+    background-image: url('/images/extra-hue-orange.webp');
+  }
+
+  .comet {
+    background-image: url('/images/comet.webp');
+  }
+
+  .slider-1 {
+    background-image: url('/svgs/slider-1.svg');
+
+    width: 284px;
+    min-width: 284px;
+    height: 40px;
+  }
+
+  .slider-2 {
+    background-image: url('/svgs/slider-2.svg');
+
+    width: 300px;
+    min-width: 300px;
+    height: 70px;
+  }
+
+  .slider-3 {
+    background-image: url('/svgs/slider-3.svg');
+
+    width: 270px;
+    min-width: 270px;
+    height: 42px;
+  }
+
+  .slider-4 {
+    background-image: url('/svgs/slider-4.svg');
+
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+  }
+
+  .slider-5 {
+    background-image: url('/svgs/slider-5.svg');
+
+    height: 80px;
+    min-width: 80px;
+    width: 80px;
+  }
+
+  .table-constant {
+    background-image: url('/svgs/constant.svg');
+  }
+
+  .table-up {
+    background-image: url('/svgs/up.svg');
+  }
+
+  .table-down {
+    background-image: url('/svgs/down.svg');
+  }
+
+  .table-button {
+    background-image: url('/buttons/button-default.svg');
+  }
+
+  .table-button:hover {
+    background-image: url('/buttons/button-hover.svg');
+  }
+
+  .social-media--telegram {
+    background-image: url('/svgs/slider-5.svg');
+  }
+
+  .social-media--twitter {
+    background-image: url('/svgs/social-media-3.svg');
+  }
+
+  .footer-planet {
+    background-image: url('/images/footer-planet.webp');
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-color);
+  color: var(--color-normal-text);
+  font-family: var(--font-text);
+
+  padding: 12px 20px 0;
+  /* some absolute images were causing unnecessary overflow */
+  overflow-x: clip;
+
+  @media (min-width: 640px) {
+    padding: 24px 32px 0;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 32px 80px 0;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+section:not(footer section) {
+  margin-bottom: 400px;
+}
+
+@media (max-width: 1023px) {
+  section:not(footer section) {
+    margin-bottom: 200px;
+  }
+}
