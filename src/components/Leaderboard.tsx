@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "./helpers/Button";
 import { useFade } from "./helpers/useFade";
-import type { LeaderBoardTable } from "./helpers/types";
+import type { LeaderBoardTable, RowType } from "./helpers/types";
 
 // don't forget about different font on the table
 
@@ -92,11 +92,11 @@ export const Leaderboard = () => {
                           width={column.width}
                         >
                           {column.headerName ? (
-                            row[column.field]
+                            row[column.field as keyof RowType]
                           ) : (
                             <div
                               className={`w-6 h-6 bg-contain bg-no-repeat table-${
-                                row[column.field]
+                                row[column.field as keyof RowType]
                               }`}
                             />
                           )}
