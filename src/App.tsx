@@ -13,7 +13,6 @@ function App() {
           <Route path='home' element={<Navigate to="/" />} />
         </Route>
 
-          {/* add a not found page */}
           <Route path='*' element={<NotFound />} />
       </Routes>
     </>
